@@ -1,0 +1,158 @@
+:root {
+    --header-height: 70px;
+    --max-content-width: 1200px;
+    --aws-orange: #ff9900;
+    --aws-dark-blue: #232f3e;
+    --aws-light-blue: #0073bb;
+    --aws-background: #16191f;
+    --aws-text: #e3e3e3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background: var(--aws-background);
+    color: var(--aws-text);
+    line-height: 1.6;
+}
+
+/* Header estilo AWS */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    background: var(--aws-dark-blue);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    color: var(--aws-orange);
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: var(--aws-text);
+    font-weight: 300;
+}
+
+/* Menú principal */
+.main-menu {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.main-menu a {
+    color: var(--aws-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.main-menu a:hover {
+    color: var(--aws-orange);
+}
+
+.main-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--aws-orange);
+    transition: width 0.3s ease;
+}
+
+.main-menu a:hover::after {
+    width: 100%;
+}
+
+/* Contenido principal */
+.main-content {
+    margin: 0 auto;
+    padding: calc(var(--header-height) + 3rem) 2rem 2rem;
+    max-width: var(--max-content-width);
+}
+
+h1 {
+    color: var(--aws-orange);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.service-card {
+    background: var(--aws-dark-blue);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--aws-orange);
+}
+
+.service-card h2 {
+    color: var(--aws-light-blue);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 0 1rem;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--aws-text);
+        font-size: 1.8rem;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .menu-open .main-menu {
+        display: flex;
+        position: absolute;
+        top: var(--header-height);
+        right: 0;
+        flex-direction: column;
+        background: var(--aws-dark-blue);
+        padding: 1.5rem;
+        min-width: 250px;
+        box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-toggle {
+        display: none;
+    }
+}
