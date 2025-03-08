@@ -177,6 +177,139 @@
     font-size: 1.8rem;
   }
   
+  /* Contenedor del carrusel */
+  .carousel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  /* Carrusel */
+  .carousel {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: #3b82f6 #e5e7eb;
+  }
+  
+  /* Personalización scrollbar */
+  .carousel::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .carousel::-webkit-scrollbar-track {
+    background: #e5e7eb;
+    border-radius: 4px;
+  }
+  
+  .carousel::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 4px;
+  }
+  
+  /* Tarjeta de servicio */
+  .service-card {
+    scroll-snap-align: start;
+    flex: 0 0 300px;
+    background: #232f3e !important; /* Azul oscuro AWS */
+    border: 1px solid #f98553; /* Borde sutil */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    color: white;
+  }
+  
+  .card-header {
+    padding: 1.5rem;
+    background: #f8fafc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .card-header > div {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #1e293b;
+    line-height: 1.4;
+    text-align: left;
+    color: white;
+  }
+  
+  .card-header img {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    margin-left: auto;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .info-section {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .info-section h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .info-section p {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  /* Colores de las secciones */
+  .blue-500 {
+    background: #0073bb;
+    color: #ffffff;
+  }
+  .blue-600 {
+    background: #0073bb;
+    color: #ffffff;
+  }
+  .blue-700 {
+    background: #0073bb;
+    color: #ffffff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .card-header {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .card-header img {
+      margin-left: 0;
+      width: 80px;
+      height: 80px;
+    }
+  
+    .card-header h2 {
+      text-align: center;
+    }
+  }
+  
   /* Responsive */
   @media (max-width: 768px) {
     header {

@@ -1,104 +1,185 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AWS Cloud Services</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;800&display=swap">
-    <!-- hoja de estilos -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;800&display=swap"
+    />
+    <!-- Import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    <!-- script del archivo index -->
+    <!-- Import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <header>
-        <a href="#" class="logo">AWS<span> Services</span></a>
-        <button class="nav-toggle">☰</button>
-        <ul class="main-menu">
-            <li><a href="#">EC2</a></li>
-            <li><a href="#">S3</a></li>
-            <li><a href="#">Lambda</a></li>
-            <li><a href="#">RDS</a></li>
-            <li><a href="#">CloudFront</a></li>
-        </ul>
+      <a href="#" class="logo">AWS<span> Services</span></a>
+      <button class="nav-toggle">☰</button>
+      <ul class="main-menu">
+        <li><a href="#">EC2</a></li>
+        <li><a href="#">S3</a></li>
+        <li><a href="#">Lambda</a></li>
+        <li><a href="#">RDS</a></li>
+        <li><a href="#">CloudFront</a></li>
+      </ul>
     </header>
 
-<main class="main-content container">
-        <h1 class="mb-4">Servicios Principales de AWS</h1>
-        
-        <div class="accordion accordion-flush" id="servicesAccordion">
-            <!-- Amazon EC2 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" 
-                            data-bs-toggle="collapse" data-bs-target="#ec2" 
-                            aria-expanded="false" aria-controls="ec2">
-                        Amazon EC2
-                    </button>
-                </h2>
-                <div id="ec2" class="accordion-collapse collapse" 
-                     data-bs-parent="#servicesAccordion">
-                    <div class="accordion-body">
-                        <p>Servicio de computación en la nube seguro y redimensionable. Ejecute aplicaciones en instancias virtuales.</p>
-                        <ul class="list-unstyled">
-                            <li>🖥 Tipos de instancias optimizadas</li>
-                            <li>🔒 Seguridad integrada</li>
-                            <li>📈 Escalado automático</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <main class="main-content container">
+      <h1 class="mb-4">Servicios Principales de AWS</h1>
 
-            <!-- Amazon S3 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" 
-                            data-bs-toggle="collapse" data-bs-target="#s3" 
-                            aria-expanded="false" aria-controls="s3">
-                        Amazon S3
-                    </button>
-                </h2>
-                <div id="s3" class="accordion-collapse collapse" 
-                     data-bs-parent="#servicesAccordion">
-                    <div class="accordion-body">
-                        <p>Almacenamiento de objetos escalable para backup, archivado y análisis de datos.</p>
-                        <ul>
-                            <li>💾 99.999999999% de durabilidad</li>
-                            <li>🔐 Encriptación automática</li>
-                            <li>🌍 Disponibilidad global</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="accordion accordion-flush" id="servicesAccordion">
+        <!-- Amazon EC2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ec2"
+              aria-expanded="false"
+              aria-controls="ec2"
+            >
+              Amazon EC2
+            </button>
+          </h2>
+          <div
+            id="ec2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#servicesAccordion"
+          >
+            <div class="accordion-body">
+              <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                  <!-- Tarjeta 1 -->
 
-            <!-- AWS Lambda -->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" 
-                            data-bs-toggle="collapse" data-bs-target="#lambda" 
-                            aria-expanded="false" aria-controls="lambda">
-                        AWS Lambda
-                    </button>
-                </h2>
-                <div id="lambda" class="accordion-collapse collapse" 
-                     data-bs-parent="#servicesAccordion">
-                    <div class="accordion-body">
-                        <p>Ejecute código sin aprovisionar servidores, pagando solo por el tiempo de consumo.</p>
-                        <ul>
-                            <li>⚡ Ejecución bajo demanda</li>
-                            <li>📊 Integración con otros servicios AWS</li>
-                            <li>🔄 Escalado automático</li>
-                        </ul>
+                  <article class="service-card">
+                    <div class="card-header">
+                      <div>
+                        <h2>Titulo Servicio 1</h2>
+                      </div>
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/Athena.png?v=1741453356958"
+                        alt="Icono servicio 1"
+                      />
                     </div>
+                    <div class="card-content">
+                      <section class="info-section blue-500">
+                        <h3>Descripción</h3>
+                        <p>
+                          Descripción detallada del primer servicio ofrecido
+                        </p>
+                      </section>
+                      <section class="info-section blue-600">
+                        <h3>Casos de uso</h3>
+                        <p>Ejemplos prácticos de implementación</p>
+                      </section>
+                      <section class="info-section blue-700">
+                        <h3>Categoría</h3>
+                        <p>Tecnología / Desarrollo</p>
+                      </section>
+                    </div>
+                  </article>
+
+                  <!-- Tarjeta 2 -->
+                  <article class="service-card">
+                    <!-- Misma estructura cambiando contenido -->
+                  </article>
+
+                  <!-- Tarjeta 3 -->
+                  <article class="service-card">
+                    <!-- Misma estructura cambiando contenido -->
+                  </article>
+
+                  <!-- Tarjeta 4 -->
+                  <article class="service-card">
+                    <!-- Misma estructura cambiando contenido -->
+                  </article>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+
+        <!-- Amazon S3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#s3"
+              aria-expanded="false"
+              aria-controls="s3"
+            >
+              Amazon S3
+            </button>
+          </h2>
+          <div
+            id="s3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#servicesAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                Almacenamiento de objetos escalable para backup, archivado y
+                análisis de datos.
+              </p>
+              <ul>
+                <li>💾 99.999999999% de durabilidad</li>
+                <li>🔐 Encriptación automática</li>
+                <li>🌍 Disponibilidad global</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- AWS Lambda -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#lambda"
+              aria-expanded="false"
+              aria-controls="lambda"
+            >
+              AWS Lambda
+            </button>
+          </h2>
+          <div
+            id="lambda"
+            class="accordion-collapse collapse"
+            data-bs-parent="#servicesAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                Ejecute código sin aprovisionar servidores, pagando solo por el
+                tiempo de consumo.
+              </p>
+              <ul>
+                <li>⚡ Ejecución bajo demanda</li>
+                <li>📊 Integración con otros servicios AWS</li>
+                <li>🔄 Escalado automático</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-            crossorigin="anonymous"></script>
-  
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
