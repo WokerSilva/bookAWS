@@ -342,14 +342,53 @@
       box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
     }
   
+    .cards-container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
     .service-card {
+      min-height: auto;
+      flex-direction: row;
+      align-items: center;
       padding: 1.5rem;
+    }
+  
+    .card-header {
+      border-bottom: none;
+      border-right: 2px solid #ff9900;
+      padding: 1rem;
+      flex: 0 0 120px;
+      text-align: center;
+    }
+  
+    .card-header img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 0.5rem;
+    }
+  
+    .card-content {
+      padding: 1rem;
+      flex-grow: 1;
     }
   }
   
   @media (min-width: 769px) {
     .nav-toggle {
       display: none;
+    }
+  }
+  
+  /* Optimización Tablet (768px - 1024px) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .service-card {
+      min-height: 350px;
+    }
+  
+    .card-header img {
+      width: 60px;
+      height: 60px;
     }
   }
   
