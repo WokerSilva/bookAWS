@@ -59,7 +59,6 @@
               <div class="carousel-container">
                 <div class="carousel" id="carousel">
                   <!-- Tarjeta 1 -->
-
                   <article class="service-card">
                     <div class="card-header">
                       <div>
@@ -87,6 +86,7 @@
                       </section>
                     </div>
                   </article>
+                  <!-- Tarjeta 1 -->
 
                   <!-- Tarjeta 2 -->
                   <article class="service-card">
@@ -115,28 +115,361 @@
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#s3"
+              data-bs-target="#networking"
               aria-expanded="false"
-              aria-controls="s3"
+              aria-controls="networking"
             >
-              Amazon S3
+              Networking
             </button>
           </h2>
           <div
-            id="s3"
+            id="networking"
             class="accordion-collapse collapse"
             data-bs-parent="#servicesAccordion"
           >
             <div class="accordion-body">
-              <p>
-                Almacenamiento de objetos escalable para backup, archivado y
-                análisis de datos.
-              </p>
-              <ul>
-                <li>💾 99.999999999% de durabilidad</li>
-                <li>🔐 Encriptación automática</li>
-                <li>🌍 Disponibilidad global</li>
-              </ul>
+              <!-- Contenedor del carrusel añadido -->
+              <div class="carousel-container">
+                <div class="carousel">
+                  <!-- Route 53 -->
+                  <article class="service-card">
+                    <div class="card-header">
+                      <div>
+                        <h2>Route 53</h2>
+                      </div>
+                      <img src="r53-icon.png" alt="DNS Service" />
+                    </div>
+                    <div class="card-content">
+                      <section class="info-section blue-500">
+                        <h3>Descripción</h3>
+                        <p>
+                          Servicio de DNS escalable y altamente disponible con
+                          registro de dominios y enrutamiento de tráfico
+                        </p>
+                      </section>
+                      <section class="info-section blue-600">
+                        <h3>Casos de uso</h3>
+                        <p>
+                          • Gestión de dominios<br />• Enrutamiento
+                          geolocalizado<br />• Integración con balanceadores de
+                          carga
+                        </p>
+                      </section>
+                      <section class="info-section blue-700">
+                        <h3>Categoría</h3>
+                        <p>DNS Global</p>
+                      </section>
+                    </div>
+                  </article>
+
+                  <!-- Direct Connect -->
+                  <article class="service-card">
+                    <div class="card-header">
+                      <div>
+                        <h2>Direct Connect</h2>
+                      </div>
+                      <img
+                        src="directconnect-icon.png"
+                        alt="Conexión dedicada"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <section class="info-section blue-500">
+                        <h3>Descripción</h3>
+                        <p>
+                          Conexión de red privada dedicada entre instalaciones
+                          locales y AWS
+                        </p>
+                      </section>
+                      <section class="info-section blue-600">
+                        <h3>Casos de uso</h3>
+                        <p>
+                          • Conexiones híbridas<br />• Transferencia de datos
+                          masivos<br />• Aplicaciones sensibles a latencia
+                        </p>
+                      </section>
+                      <section class="info-section blue-700">
+                        <h3>Categoría</h3>
+                        <p>Conexión física</p>
+                      </section>
+                    </div>
+                  </article>
+
+                  <!-- VPC -->
+                  <article class="service-card">
+                    <div class="card-header">
+                      <div>
+                        <h2>VPC</h2>
+                      </div>
+                      <img src="vpc-icon.png" alt="Red privada" />
+                    </div>
+                    <div class="card-content">
+                      <section class="info-section blue-500">
+                        <h3>Descripción</h3>
+                        <p>
+                          Red virtual aislada lógicamente con control completo
+                          sobre el entorno de red
+                        </p>
+                      </section>
+                      <section class="info-section blue-600">
+                        <h3>Casos de uso</h3>
+                        <p>
+                          • Aislamiento de entornos<br />• Definición de
+                          subredes<br />• Grupos de seguridad
+                        </p>
+                      </section>
+                      <section class="info-section blue-700">
+                        <h3>Categoría</h3>
+                        <p>Red virtual</p>
+                      </section>
+                    </div>
+                  </article>
+
+                  <!-- VPN -->
+                  <article class="service-card">
+                    <div class="card-header">
+                      <div>
+                        <h2>VPN</h2>
+                      </div>
+                      <img src="vpn-icon.png" alt="Conexión segura" />
+                    </div>
+                    <div class="card-content">
+                      <section class="info-section blue-500">
+                        <h3>Descripción</h3>
+                        <p>
+                          Conexión segura y cifrada entre redes locales y la
+                          nube de AWS
+                        </p>
+                      </section>
+                      <section class="info-section blue-600">
+                        <h3>Casos de uso</h3>
+                        <p>
+                          • Acceso remoto seguro<br />• Conexión
+                          sitio-a-sitio<br />• Encriptación IPsec
+                        </p>
+                      </section>
+                      <section class="info-section blue-700">
+                        <h3>Categoría</h3>
+                        <p>Conexión segura</p>
+                      </section>
+                    </div>
+                  </article>
+
+                  <!-- ELB -->
+                  <article class="service-card">
+                    <div class="card-header">
+                      <div>
+                        <h2>ELB</h2>
+                      </div>
+                      <img src="elb-icon.png" alt="Balanceo de carga" />
+                    </div>
+                    <div class="card-content">
+                      <section class="info-section blue-500">
+                        <h3>Descripción</h3>
+                        <p>
+                          Elastic Load Balancing - Distribución automática del
+                          tráfico entrante
+                        </p>
+                      </section>
+                      <section class="info-section blue-600">
+                        <h3>Casos de uso</h3>
+                        <p>
+                          • Alta disponibilidad<br />• Escalado horizontal<br />•
+                          Terminación SSL
+                        </p>
+                      </section>
+                      <section class="info-section blue-700">
+                        <h3>Categoría</h3>
+                        <p>Balanceo de tráfico</p>
+                      </section>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+          <!-- Amazon S3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#networking"
+              aria-expanded="false"
+              aria-controls="networking"
+            >
+              Networking
+            </button>
+          </h2>
+          <div
+            id="networking"
+            class="accordion-collapse collapse"
+            data-bs-parent="#servicesAccordion"
+          >
+            <div class="accordion-body">
+              <!-- Contenedor del carrusel añadido -->
+              <div class="carousel-container">
+                <div class="carousel">
+                  <!-- Route 53 -->
+                  <article class="service-card">
+                    <div class="card-header">
+                      <div>
+                        <h2>Route 53</h2>
+                      </div>
+                      <img src="r53-icon.png" alt="DNS Service" />
+                    </div>
+                    <div class="card-content">
+                      <section class="info-section blue-500">
+                        <h3>Descripción</h3>
+                        <p>
+                          Servicio de DNS escalable y altamente disponible con
+                          registro de dominios y enrutamiento de tráfico
+                        </p>
+                      </section>
+                      <section class="info-section blue-600">
+                        <h3>Casos de uso</h3>
+                        <p>
+                          • Gestión de dominios<br />• Enrutamiento
+                          geolocalizado<br />• Integración con balanceadores de
+                          carga
+                        </p>
+                      </section>
+                      <section class="info-section blue-700">
+                        <h3>Categoría</h3>
+                        <p>DNS Global</p>
+                      </section>
+                    </div>
+                  </article>
+
+                  <!-- Direct Connect -->
+                  <article class="service-card">
+                    <div class="card-header">
+                      <div>
+                        <h2>Direct Connect</h2>
+                      </div>
+                      <img
+                        src="directconnect-icon.png"
+                        alt="Conexión dedicada"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <section class="info-section blue-500">
+                        <h3>Descripción</h3>
+                        <p>
+                          Conexión de red privada dedicada entre instalaciones
+                          locales y AWS
+                        </p>
+                      </section>
+                      <section class="info-section blue-600">
+                        <h3>Casos de uso</h3>
+                        <p>
+                          • Conexiones híbridas<br />• Transferencia de datos
+                          masivos<br />• Aplicaciones sensibles a latencia
+                        </p>
+                      </section>
+                      <section class="info-section blue-700">
+                        <h3>Categoría</h3>
+                        <p>Conexión física</p>
+                      </section>
+                    </div>
+                  </article>
+
+                  <!-- VPC -->
+                  <article class="service-card">
+                    <div class="card-header">
+                      <div>
+                        <h2>VPC</h2>
+                      </div>
+                      <img src="vpc-icon.png" alt="Red privada" />
+                    </div>
+                    <div class="card-content">
+                      <section class="info-section blue-500">
+                        <h3>Descripción</h3>
+                        <p>
+                          Red virtual aislada lógicamente con control completo
+                          sobre el entorno de red
+                        </p>
+                      </section>
+                      <section class="info-section blue-600">
+                        <h3>Casos de uso</h3>
+                        <p>
+                          • Aislamiento de entornos<br />• Definición de
+                          subredes<br />• Grupos de seguridad
+                        </p>
+                      </section>
+                      <section class="info-section blue-700">
+                        <h3>Categoría</h3>
+                        <p>Red virtual</p>
+                      </section>
+                    </div>
+                  </article>
+
+                  <!-- VPN -->
+                  <article class="service-card">
+                    <div class="card-header">
+                      <div>
+                        <h2>VPN</h2>
+                      </div>
+                      <img src="vpn-icon.png" alt="Conexión segura" />
+                    </div>
+                    <div class="card-content">
+                      <section class="info-section blue-500">
+                        <h3>Descripción</h3>
+                        <p>
+                          Conexión segura y cifrada entre redes locales y la
+                          nube de AWS
+                        </p>
+                      </section>
+                      <section class="info-section blue-600">
+                        <h3>Casos de uso</h3>
+                        <p>
+                          • Acceso remoto seguro<br />• Conexión
+                          sitio-a-sitio<br />• Encriptación IPsec
+                        </p>
+                      </section>
+                      <section class="info-section blue-700">
+                        <h3>Categoría</h3>
+                        <p>Conexión segura</p>
+                      </section>
+                    </div>
+                  </article>
+
+                  <!-- ELB -->
+                  <article class="service-card">
+                    <div class="card-header">
+                      <div>
+                        <h2>ELB</h2>
+                      </div>
+                      <img src="elb-icon.png" alt="Balanceo de carga" />
+                    </div>
+                    <div class="card-content">
+                      <section class="info-section blue-500">
+                        <h3>Descripción</h3>
+                        <p>
+                          Elastic Load Balancing - Distribución automática del
+                          tráfico entrante
+                        </p>
+                      </section>
+                      <section class="info-section blue-600">
+                        <h3>Casos de uso</h3>
+                        <p>
+                          • Alta disponibilidad<br />• Escalado horizontal<br />•
+                          Terminación SSL
+                        </p>
+                      </section>
+                      <section class="info-section blue-700">
+                        <h3>Categoría</h3>
+                        <p>Balanceo de tráfico</p>
+                      </section>
+                    </div>
+                  </article>
+                </div>
+              </div>
             </div>
           </div>
         </div>
