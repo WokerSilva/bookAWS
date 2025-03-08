@@ -6,23 +6,23 @@
     --aws-light-blue: #0073bb;
     --aws-background: #16191f;
     --aws-text: #e3e3e3;
-}
-
-* {
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: "Work Sans", sans-serif;
     background: var(--aws-background);
     color: var(--aws-text);
     line-height: 1.6;
-}
-
-/* Header estilo AWS */
-header {
+  }
+  
+  /* Header estilo AWS */
+  header {
     position: fixed;
     top: 0;
     left: 0;
@@ -35,29 +35,86 @@ header {
     justify-content: space-between;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.logo {
+  }
+  
+  .logo {
     color: var(--aws-orange);
     font-weight: 600;
     font-size: 1.8rem;
     text-decoration: none;
     letter-spacing: -0.5px;
-}
-
-.logo span {
+  }
+  
+  .logo span {
     color: var(--aws-text);
     font-weight: 300;
-}
-
-/* Menú principal */
-.main-menu {
+  }
+  
+  /* Sobreescritura de estilos Bootstrap */
+  .accordion-item {
+    border: 1px solid var(--aws-text);
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .accordion-button {
+    background-color: var(--aws-dark-blue) !important;
+    color: var(--aws-text) !important;
+    font-weight: 500;
+    border: none !important;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color: var(--aws-orange) !important;
+    background-color: var(--aws-dark-blue) !important;
+    box-shadow: none;
+  }
+  
+  .accordion-button:not(.collapsed) + .accordion-collapse .accordion-item {
+    border-color: var(--aws-orange);
+  }
+  
+  .accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 153, 0, 0.25);
+  }
+  
+  .accordion-flush .accordion-item {
+    background-color: var(--aws-background);
+    border-bottom: 1px solid var(--aws-text);
+  }
+  
+  .accordion-body {
+    background-color: var(--aws-dark-blue);
+    color: var(--aws-text);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Borde naranja cuando está abierto */
+  .accordion-button:not(.collapsed) {
+    position: relative;
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    border: 2px solid var(--aws-orange);
+    border-radius: 4px;
+    pointer-events: none;
+  }
+  
+  /* Menú principal */
+  .main-menu {
     display: flex;
     gap: 2.5rem;
     list-style: none;
-}
-
-.main-menu a {
+  }
+  
+  .main-menu a {
     color: var(--aws-text);
     text-decoration: none;
     transition: color 0.3s ease;
@@ -65,13 +122,13 @@ header {
     font-weight: 500;
     padding: 0.5rem;
     position: relative;
-}
-
-.main-menu a:hover {
+  }
+  
+  .main-menu a:hover {
     color: var(--aws-orange);
-}
-
-.main-menu a::after {
+  }
+  
+  .main-menu a::after {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -80,79 +137,86 @@ header {
     height: 2px;
     background: var(--aws-orange);
     transition: width 0.3s ease;
-}
-
-.main-menu a:hover::after {
+  }
+  
+  .main-menu a:hover::after {
     width: 100%;
-}
-
-/* Contenido principal */
-.main-content {
+  }
+  
+  /* Contenido principal */
+  .main-content {
     margin: 0 auto;
-    padding: calc(var(--header-height) + 3rem) 2rem 2rem;
+    padding: calc(var(--header-height) + 1rem) 2rem 2rem; /* Modificado */
     max-width: var(--max-content-width);
-}
-
-h1 {
+  }
+  
+  .main-content h1 {
+    margin-top: 0; /* Elimina margen superior */
+    padding-top: 0.5rem; /* Pequeño ajuste adicional */
+    font-size: 2.2rem; /* Opcional: tamaño ligeramente menor */
+  }
+  
+  h1 {
     color: var(--aws-orange);
     font-size: 2.5rem;
     margin-bottom: 2rem;
     font-weight: 600;
-}
-
-.service-card {
+  }
+  
+  .service-card {
     background: var(--aws-dark-blue);
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
     border-left: 4px solid var(--aws-orange);
-}
-
-.service-card h2 {
+  }
+  
+  .service-card h2 {
     color: var(--aws-light-blue);
     margin-bottom: 1rem;
     font-size: 1.8rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
     header {
-        padding: 0 1rem;
+      padding: 0 1rem;
     }
-
+  
     .main-menu {
-        display: none;
+      display: none;
     }
-
+  
     .nav-toggle {
-        display: block;
-        background: none;
-        border: none;
-        color: var(--aws-text);
-        font-size: 1.8rem;
-        cursor: pointer;
-        padding: 0.5rem;
+      display: block;
+      background: none;
+      border: none;
+      color: var(--aws-text);
+      font-size: 1.8rem;
+      cursor: pointer;
+      padding: 0.5rem;
     }
-
+  
     .menu-open .main-menu {
-        display: flex;
-        position: absolute;
-        top: var(--header-height);
-        right: 0;
-        flex-direction: column;
-        background: var(--aws-dark-blue);
-        padding: 1.5rem;
-        min-width: 250px;
-        box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+      display: flex;
+      position: absolute;
+      top: var(--header-height);
+      right: 0;
+      flex-direction: column;
+      background: var(--aws-dark-blue);
+      padding: 1.5rem;
+      min-width: 250px;
+      box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
     }
-
+  
     .service-card {
-        padding: 1.5rem;
+      padding: 1.5rem;
     }
-}
-
-@media (min-width: 769px) {
+  }
+  
+  @media (min-width: 769px) {
     .nav-toggle {
-        display: none;
+      display: none;
     }
-}
+  }
+  
