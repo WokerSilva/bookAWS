@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/style.css" />
     <!-- Import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <script src="/creacion.js" defer></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -34,96 +35,7 @@
 
     <main class="main-content container">
       <h1 class="mb-4">Servicios Principales de AWS</h1>
-
       <div class="accordion accordion-flush" id="servicesAccordion">
-        <!-- Amazon EC2 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#ec2"
-              aria-expanded="false"
-              aria-controls="ec2"
-            >
-              Amazon EC2
-            </button>
-          </h2>
-          <div
-            id="ec2"
-            class="accordion-collapse collapse"
-            data-bs-parent="#servicesAccordion"
-          >
-            <div class="accordion-body">
-              <div class="carousel-container">
-                <div class="carousel" id="carousel">
-                  <!-- Tarjeta 1 -->
-                  <article class="service-card">
-                    <div class="card-header">
-                      <div>
-                        <h2>Titulo Servicio 1</h2>
-                      </div>
-                      <img
-                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/Athena.png?v=1741453356958"
-                        alt="Icono servicio 1"
-                      />
-                    </div>
-                    <div class="card-content">
-                      <section class="info-section blue-500">
-                        <h3>Descripción</h3>
-                        <p>
-                          Descripción detallada del primer servicio ofrecido
-                        </p>
-                      </section>
-                      <section class="info-section blue-600">
-                        <h3>Casos de uso</h3>
-                        <p>Ejemplos prácticos de implementación</p>
-                      </section>
-                      <section class="info-section blue-700">
-                        <h3>Categoría</h3>
-                        <p>Tecnología / Desarrollo</p>
-                      </section>
-                    </div>
-                  </article>
-                  <!-- Tarjeta 1 -->
-
-                  <!-- Tarjeta 2 -->
-                  <article class="service-card">
-                    <!-- Misma estructura cambiando contenido -->
-                  </article>
-
-                  <!-- Tarjeta 3 -->
-                  <article class="service-card">
-                    <!-- Misma estructura cambiando contenido -->
-                  </article>
-
-                  <!-- Tarjeta 4 -->
-                  <article class="service-card">
-                    <!-- Misma estructura cambiando contenido -->
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Networking -->
-        <!-- Networking -->
-        <!-- Networking -->
-        <!-- Networking -->
-        <!-- Networking -->
-        <!-- Networking -->
-        <!-- Networking -->
-        <!-- Networking -->
-        <!-- Networking -->
-        <!-- Networking -->
-        <!-- Networking -->
-        <!-- Networking -->
-        <!-- Networking -->
-        <!-- Networking -->
-        <!-- Networking -->
-        <!-- Networking -->
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button
@@ -152,7 +64,10 @@
                       <div>
                         <h2>Route 53</h2>
                       </div>
-                      <img src="r53-icon.png" alt="DNS Service" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/amazon-route-53.png?v=1741819374974"
+                        alt="DNS Service"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -175,6 +90,11 @@
                         <p>DNS Global</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/route53/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Direct Connect -->
@@ -184,7 +104,7 @@
                         <h2>Direct Connect</h2>
                       </div>
                       <img
-                        src="directconnect-icon.png"
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/a71a67d7-5680-4dd1-affb-32e5ba3206a3.image.png?v=1741542367180"
                         alt="Conexión dedicada"
                       />
                     </div>
@@ -208,6 +128,11 @@
                         <p>Conexión física</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/directconnect/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- VPC -->
@@ -216,7 +141,10 @@
                       <div>
                         <h2>VPC</h2>
                       </div>
-                      <img src="vpc-icon.png" alt="Red privada" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/amazon-vpc.png?v=1741803530998"
+                        alt="Red privada"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -238,6 +166,9 @@
                         <p>Red virtual</p>
                       </section>
                     </div>
+                    <a href="https://aws.amazon.com/vpc/" class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- VPN -->
@@ -246,7 +177,10 @@
                       <div>
                         <h2>VPN</h2>
                       </div>
-                      <img src="vpn-icon.png" alt="Conexión segura" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/vpc-vpn-connection.png?v=1741823393496"
+                        alt="Conexión segura"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -268,6 +202,9 @@
                         <p>Conexión segura</p>
                       </section>
                     </div>
+                    <a href="https://aws.amazon.com/vpn/" class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- ELB -->
@@ -276,7 +213,10 @@
                       <div>
                         <h2>ELB</h2>
                       </div>
-                      <img src="elb-icon.png" alt="Balanceo de carga" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/661f758f-21ef-4d15-9390-727ad0866bea.image.png?v=1741823485847"
+                        alt="Balanceo de carga"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -298,6 +238,11 @@
                         <p>Balanceo de tráfico</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/elasticloadbalancing/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
                 </div>
               </div>
@@ -327,12 +272,16 @@
               <div class="carousel-container">
                 <div class="carousel">
                   <!-- Aurora -->
+                  <!-- Aurora -->
                   <article class="service-card">
                     <div class="card-header">
                       <div>
                         <h2>Aurora</h2>
                       </div>
-                      <img src="aurora-icon.png" alt="Relational Database" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/2633d917-5eea-4c84-91ef-620e365ddfa8.image.png?v=1741803872359"
+                        alt="Relational Database"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -354,6 +303,11 @@
                         <p>Base de Datos Relacional</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/rds/aurora/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- DynamoDB -->
@@ -362,7 +316,10 @@
                       <div>
                         <h2>DynamoDB</h2>
                       </div>
-                      <img src="dynamodb-icon.png" alt="NoSQL Database" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/162c1732-ead6-4214-9564-384e46d06066.image.png?v=1741803905551"
+                        alt="NoSQL Database"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -384,6 +341,11 @@
                         <p>NoSQL Key-Value</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/dynamodb/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- DocumentDB -->
@@ -392,7 +354,10 @@
                       <div>
                         <h2>DocumentDB</h2>
                       </div>
-                      <img src="documentdb-icon.png" alt="MongoDB Compatible" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/0f0ea995-fa8a-43cb-b119-2a14b1d64d6f.image.png?v=1741803943018"
+                        alt="MongoDB Compatible"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -414,6 +379,11 @@
                         <p>Base de Datos de Documentos</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/documentdb/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Redshift -->
@@ -422,7 +392,10 @@
                       <div>
                         <h2>Redshift</h2>
                       </div>
-                      <img src="redshift-icon.png" alt="Data Warehouse" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/355eb670-9cfe-450e-af95-94764b21c654.image.png?v=1741804721226"
+                        alt="Data Warehouse"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -444,6 +417,11 @@
                         <p>Data Warehouse</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/redshift/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Neptune -->
@@ -452,7 +430,10 @@
                       <div>
                         <h2>Neptune</h2>
                       </div>
-                      <img src="neptune-icon.png" alt="Graph Database" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/fb06119c-e079-475e-8d38-e90cadf37719.image.png?v=1741804786143"
+                        alt="Graph Database"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -474,6 +455,11 @@
                         <p>Base de Datos de Grafos</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/neptune/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- ElastiCache -->
@@ -482,7 +468,10 @@
                       <div>
                         <h2>ElastiCache</h2>
                       </div>
-                      <img src="elasticache-icon.png" alt="In-Memory Cache" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/68e423db-4dec-4dfa-8886-6b8ba400b002.image.png?v=1741804834593"
+                        alt="In-Memory Cache"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -504,6 +493,11 @@
                         <p>Caché en Memoria</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/elasticache/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Keyspaces -->
@@ -512,7 +506,10 @@
                       <div>
                         <h2>Keyspaces</h2>
                       </div>
-                      <img src="keyspaces-icon.png" alt="Apache Cassandra" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/9f1ba63b-5757-4579-8a1e-0d6347a20839.image.png?v=1741804858210"
+                        alt="Apache Cassandra"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -534,6 +531,11 @@
                         <p>Wide-Column Store</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/keyspaces/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Timestream -->
@@ -543,7 +545,7 @@
                         <h2>Timestream</h2>
                       </div>
                       <img
-                        src="timestream-icon.png"
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/4ed51c6e-da9b-475a-9f7c-e3f683388d0d.image.png?v=1741804882329"
                         alt="Time-Series Database"
                       />
                     </div>
@@ -567,6 +569,11 @@
                         <p>Series Temporales</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/timestream/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- RDS -->
@@ -575,7 +582,10 @@
                       <div>
                         <h2>RDS</h2>
                       </div>
-                      <img src="rds-icon.png" alt="Managed SQL" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/b3682523-33bf-44e4-94ee-21139e229d80.image.png?v=1741804906358"
+                        alt="Managed SQL"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -597,6 +607,9 @@
                         <p>SQL Administrado</p>
                       </section>
                     </div>
+                    <a href="https://aws.amazon.com/rds/" class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
                 </div>
               </div>
@@ -626,12 +639,16 @@
               <div class="carousel-container">
                 <div class="carousel">
                   <!-- Amazon ECS -->
+                  <!-- Amazon ECS -->
                   <article class="service-card">
                     <div class="card-header">
                       <div>
                         <h2>Amazon ECS</h2>
                       </div>
-                      <img src="ecs-icon.png" alt="ECS Service" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/amazon-ecs.png?v=1741805324901"
+                        alt="ECS Service"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -653,6 +670,9 @@
                         <p>Orquestación de contenedores</p>
                       </section>
                     </div>
+                    <a href="https://aws.amazon.com/ecs/" class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- AWS Fargate -->
@@ -661,7 +681,10 @@
                       <div>
                         <h2>AWS Fargate</h2>
                       </div>
-                      <img src="fargate-icon.png" alt="Serverless Containers" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/37518649-47b9-4f7e-9572-f7e353174988.image.png?v=1741805350637"
+                        alt="Serverless Containers"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -683,6 +706,11 @@
                         <p>Contenedores sin servidor</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/fargate/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- AWS Copilot -->
@@ -691,7 +719,10 @@
                       <div>
                         <h2>AWS Copilot</h2>
                       </div>
-                      <img src="copilot-icon.png" alt="CLI Tool" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/terminal.png?v=1741823760696"
+                        alt="CLI Tool"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -713,6 +744,11 @@
                         <p>Herramientas de desarrollo</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/copilot/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Amazon EKS -->
@@ -721,7 +757,10 @@
                       <div>
                         <h2>Amazon EKS</h2>
                       </div>
-                      <img src="eks-icon.png" alt="Kubernetes Service" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/37b0a6ae-c23c-4c82-b934-bfec958b4b3a.image.png?v=1741805735269"
+                        alt="Kubernetes Service"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -743,6 +782,9 @@
                         <p>Kubernetes gestionado</p>
                       </section>
                     </div>
+                    <a href="https://aws.amazon.com/eks/" class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Amazon ECR -->
@@ -751,7 +793,10 @@
                       <div>
                         <h2>Amazon ECR</h2>
                       </div>
-                      <img src="ecr-icon.png" alt="Container Registry" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/amazon-ecr.png?v=1741823709972"
+                        alt="Container Registry"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -774,6 +819,9 @@
                         <p>Registro de contenedores</p>
                       </section>
                     </div>
+                    <a href="https://aws.amazon.com/ecr/" class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
                 </div>
               </div>
@@ -803,12 +851,16 @@
               <div class="carousel-container">
                 <div class="carousel">
                   <!-- AWS App Runner -->
+                  <!-- AWS App Runner -->
                   <article class="service-card">
                     <div class="card-header">
                       <div>
                         <h2>AWS App Runner</h2>
                       </div>
-                      <img src="apprunner-icon.png" alt="App Runner Service" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/72212c64-8bb9-4394-9087-f23cbfb2b7ac.image.png?v=1741805966812"
+                        alt="App Runner Service"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -831,6 +883,11 @@
                         <p>PaaS (Plataforma como Servicio)</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/apprunner/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Auto Scaling -->
@@ -840,7 +897,7 @@
                         <h2>Auto Scaling</h2>
                       </div>
                       <img
-                        src="autoscaling-icon.png"
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/24d7d490-03bb-4dc3-a8d4-c2e0c4fd8abd.image.png?v=1741805998430"
                         alt="Auto Scaling Service"
                       />
                     </div>
@@ -864,6 +921,11 @@
                         <p>Escalado Automático</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/autoscaling/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- AWS Lightsail -->
@@ -872,7 +934,10 @@
                       <div>
                         <h2>AWS Lightsail</h2>
                       </div>
-                      <img src="lightsail-icon.png" alt="VPS Service" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/3ba9b6bf-1c29-494b-b3c5-40d284b52456.image.png?v=1741806030404"
+                        alt="VPS Service"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -894,6 +959,11 @@
                         <p>VPS (Servidor Privado Virtual)</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/lightsail/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- AWS Lambda -->
@@ -902,7 +972,10 @@
                       <div>
                         <h2>AWS Lambda</h2>
                       </div>
-                      <img src="lambda-icon.png" alt="Serverless Computing" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/dae2f829-f3bc-42b6-9206-2db12cd79adb.image.png?v=1741806056336"
+                        alt="Serverless Computing"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -924,6 +997,11 @@
                         <p>Serverless Computing</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/lambda/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- AWS Outposts -->
@@ -932,7 +1010,10 @@
                       <div>
                         <h2>AWS Outposts</h2>
                       </div>
-                      <img src="outposts-icon.png" alt="Hybrid Cloud" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/e27fb7fe-3b18-4c0a-aeae-33edae303b04.image.png?v=1741806092788"
+                        alt="Hybrid Cloud"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -955,6 +1036,11 @@
                         <p>Computación Híbrida</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/outposts/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- AWS Local Zone -->
@@ -963,7 +1049,10 @@
                       <div>
                         <h2>AWS Local Zone</h2>
                       </div>
-                      <img src="localzone-icon.png" alt="Edge Computing" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/3c5fd9e4-40fe-4267-a938-42a940ece040.image.png?v=1741806117134"
+                        alt="Edge Computing"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -985,6 +1074,11 @@
                         <p>Edge Computing</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/about-aws/global-infrastructure/localzones/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Amazon EC2 -->
@@ -993,7 +1087,10 @@
                       <div>
                         <h2>Amazon EC2</h2>
                       </div>
-                      <img src="ec2-icon.png" alt="Virtual Servers" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/ec2.png?v=1741823867759"
+                        alt="Virtual Servers"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1015,6 +1112,9 @@
                         <p>Servidores Virtuales</p>
                       </section>
                     </div>
+                    <a href="https://aws.amazon.com/ec2/" class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
                 </div>
               </div>
@@ -1049,7 +1149,10 @@
                       <div>
                         <h2>Amazon S3</h2>
                       </div>
-                      <img src="s3-icon.png" alt="Object Storage" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/amazon-s3.png?v=1741806442400"
+                        alt="Object Storage"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1072,6 +1175,9 @@
                         <p>Object Storage</p>
                       </section>
                     </div>
+                    <a href="https://aws.amazon.com/s3/" class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- S3 Glacier -->
@@ -1080,7 +1186,10 @@
                       <div>
                         <h2>S3 Glacier</h2>
                       </div>
-                      <img src="glacier-icon.png" alt="Archival Storage" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/173a1b0b-48ca-40b9-b0db-b376fead26db.image.png?v=1741806504975"
+                        alt="Archival Storage"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1102,6 +1211,11 @@
                         <p>Archivo en Frío</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/glacier/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- AWS Backup -->
@@ -1110,7 +1224,10 @@
                       <div>
                         <h2>AWS Backup</h2>
                       </div>
-                      <img src="backup-icon.png" alt="Backup Service" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/2e4d53c4-67cb-49d3-974c-c983f757c5b8.image.png?v=1741806539834"
+                        alt="Backup Service"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1132,6 +1249,11 @@
                         <p>Gestión de Backups</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/backup/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- File Cache -->
@@ -1140,7 +1262,10 @@
                       <div>
                         <h2>File Cache</h2>
                       </div>
-                      <img src="filecache-icon.png" alt="Caching Service" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/9dfc5c17-dade-4dd1-9531-3cc0d9191e1d.image.png?v=1741806562611"
+                        alt="Caching Service"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1162,6 +1287,11 @@
                         <p>Caché de Archivos</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/file-cache/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Amazon EBS -->
@@ -1170,7 +1300,10 @@
                       <div>
                         <h2>Amazon EBS</h2>
                       </div>
-                      <img src="ebs-icon.png" alt="Block Storage" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/f3a8d988-52ee-4d33-b1d9-fb0f737d1728.image.png?v=1741806609855"
+                        alt="Block Storage"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1192,6 +1325,9 @@
                         <p>Block Storage</p>
                       </section>
                     </div>
+                    <a href="https://aws.amazon.com/ebs/" class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Amazon EFS -->
@@ -1200,7 +1336,10 @@
                       <div>
                         <h2>Amazon EFS</h2>
                       </div>
-                      <img src="efs-icon.png" alt="File Storage" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/amazon-efs.png?v=1741806667987"
+                        alt="File Storage"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1222,6 +1361,9 @@
                         <p>File Storage</p>
                       </section>
                     </div>
+                    <a href="https://aws.amazon.com/efs/" class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
                 </div>
               </div>
@@ -1256,7 +1398,10 @@
                       <div>
                         <h2>AWS Data Pipeline</h2>
                       </div>
-                      <img src="pipeline-icon.png" alt="Data Workflow" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/aws-data-pipeline.png?v=1741806876056"
+                        alt="Data Workflow"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1278,6 +1423,11 @@
                         <p>Orquestación de datos</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/datapipeline/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Amazon QuickSight -->
@@ -1287,7 +1437,7 @@
                         <h2>Amazon QuickSight</h2>
                       </div>
                       <img
-                        src="quicksight-icon.png"
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/aws-quicksight.png?v=1741806918962"
                         alt="Business Intelligence"
                       />
                     </div>
@@ -1311,6 +1461,11 @@
                         <p>Visualización de datos</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/quicksight/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Amazon Athena -->
@@ -1319,7 +1474,10 @@
                       <div>
                         <h2>Amazon Athena</h2>
                       </div>
-                      <img src="athena-icon.png" alt="SQL Query Service" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/aws-athena.png?v=1741807143660"
+                        alt="SQL Query Service"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1341,6 +1499,11 @@
                         <p>Query en S3</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/athena/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Amazon EMR -->
@@ -1349,7 +1512,10 @@
                       <div>
                         <h2>Amazon EMR</h2>
                       </div>
-                      <img src="emr-icon.png" alt="Big Data Processing" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/aws-emr.png?v=1741807301589"
+                        alt="Big Data Processing"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1371,6 +1537,9 @@
                         <p>Procesamiento Big Data</p>
                       </section>
                     </div>
+                    <a href="https://aws.amazon.com/emr/" class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Amazon Kinesis -->
@@ -1379,7 +1548,10 @@
                       <div>
                         <h2>Amazon Kinesis</h2>
                       </div>
-                      <img src="kinesis-icon.png" alt="Real-time Data" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/aws-kinesis.png?v=1741807509784"
+                        alt="Real-time Data"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1401,6 +1573,11 @@
                         <p>Streaming de datos</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/kinesis/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Amazon MSK -->
@@ -1409,7 +1586,10 @@
                       <div>
                         <h2>Amazon MSK</h2>
                       </div>
-                      <img src="msk-icon.png" alt="Kafka Service" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/Managed%20Streaming%20for%20Apache%20Kafka.png?v=1741807649098"
+                        alt="Kafka Service"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1431,6 +1611,9 @@
                         <p>Event Streaming</p>
                       </section>
                     </div>
+                    <a href="https://aws.amazon.com/msk/" class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Amazon FinSpace -->
@@ -1439,7 +1622,10 @@
                       <div>
                         <h2>Amazon FinSpace</h2>
                       </div>
-                      <img src="finspace-icon.png" alt="Financial Analytics" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/801bd1e9-8d4d-40d3-a6f9-72fc4bd1cf9d.image.png?v=1741807721624"
+                        alt="Financial Analytics"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1461,6 +1647,11 @@
                         <p>Analítica Financiera</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/finspace/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
                 </div>
               </div>
@@ -1495,7 +1686,10 @@
                       <div>
                         <h2>Macie</h2>
                       </div>
-                      <img src="macie-icon.png" alt="Data Protection" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/4dc7a76f-8913-4987-9770-12c0cd3309cb.image.png?v=1741807909974"
+                        alt="Data Protection"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1517,6 +1711,11 @@
                         <p>Protección de Datos</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/macie/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Cognito -->
@@ -1525,7 +1724,10 @@
                       <div>
                         <h2>Cognito</h2>
                       </div>
-                      <img src="cognito-icon.png" alt="User Identity" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/amazon-cognito.png?v=1741807961306"
+                        alt="User Identity"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1547,6 +1749,11 @@
                         <p>Gestión de Identidad</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/cognito/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Detective -->
@@ -1555,7 +1762,10 @@
                       <div>
                         <h2>Detective</h2>
                       </div>
-                      <img src="detective-icon.png" alt="Security Analysis" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/2b502ca1-a0e4-467e-9999-dba662261f74.image.png?v=1741808005625"
+                        alt="Security Analysis"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1577,6 +1787,11 @@
                         <p>Análisis de Seguridad</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/detective/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- GuardDuty -->
@@ -1585,7 +1800,10 @@
                       <div>
                         <h2>GuardDuty</h2>
                       </div>
-                      <img src="guardduty-icon.png" alt="Threat Detection" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/4ca4ed8c-2147-467f-9678-55f9ee5f2c91.image.png?v=1741808071395"
+                        alt="Threat Detection"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1607,6 +1825,11 @@
                         <p>Detección de Amenazas</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/guardduty/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Inspector -->
@@ -1616,7 +1839,7 @@
                         <h2>Inspector</h2>
                       </div>
                       <img
-                        src="inspector-icon.png"
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/amazon-inspector.png?v=1741808144377"
                         alt="Vulnerability Scanning"
                       />
                     </div>
@@ -1640,6 +1863,11 @@
                         <p>Escaneo de Vulnerabilidades</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/inspector/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Artifact -->
@@ -1648,7 +1876,10 @@
                       <div>
                         <h2>Artifact</h2>
                       </div>
-                      <img src="artifact-icon.png" alt="Compliance Reports" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/aws-artifact.png?v=1741808194653"
+                        alt="Compliance Reports"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1670,6 +1901,11 @@
                         <p>Cumplimiento Normativo</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/artifact/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- IAM -->
@@ -1678,7 +1914,10 @@
                       <div>
                         <h2>IAM</h2>
                       </div>
-                      <img src="iam-icon.png" alt="Access Management" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/iam.png?v=1741808228644"
+                        alt="Access Management"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1700,6 +1939,9 @@
                         <p>Control de Accesos</p>
                       </section>
                     </div>
+                    <a href="https://aws.amazon.com/iam/" class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- CloudHSM -->
@@ -1708,7 +1950,10 @@
                       <div>
                         <h2>CloudHSM</h2>
                       </div>
-                      <img src="hsm-icon.png" alt="Hardware Security" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/aws-cloudhsm.png?v=1741808284384"
+                        alt="Hardware Security"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1730,6 +1975,11 @@
                         <p>Seguridad Criptográfica</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/cloudhsm/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Directory Service -->
@@ -1738,7 +1988,10 @@
                       <div>
                         <h2>Directory Service</h2>
                       </div>
-                      <img src="directory-icon.png" alt="Managed AD" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/aws-directory-service.png?v=1741808391278"
+                        alt="Managed AD"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1760,6 +2013,11 @@
                         <p>Servicio de Directorio</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/directoryservice/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
                 </div>
               </div>
@@ -1794,7 +2052,10 @@
                       <div>
                         <h2>AWS App Mesh</h2>
                       </div>
-                      <img src="appmesh-icon.png" alt="Service Mesh" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/7ae203c1-d144-40c2-b0ff-091e8a58d8ce.image.png?v=1741808604830"
+                        alt="Service Mesh"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1816,6 +2077,11 @@
                         <p>Service Mesh</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/app-mesh/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Amazon Location Service -->
@@ -1824,7 +2090,10 @@
                       <div>
                         <h2>Location Service</h2>
                       </div>
-                      <img src="location-icon.png" alt="Geolocation" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/b8f82116-d79c-479f-a3ef-5532511f07ad.image.png?v=1741808645443"
+                        alt="Geolocation"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1846,6 +2115,11 @@
                         <p>Geolocalización</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/location/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- API Gateway -->
@@ -1854,7 +2128,10 @@
                       <div>
                         <h2>API Gateway</h2>
                       </div>
-                      <img src="apigateway-icon.png" alt="API Management" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/api-gateway.png?v=1741808672257"
+                        alt="API Management"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1876,6 +2153,11 @@
                         <p>Gestión de APIs</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/api-gateway/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- CloudFront -->
@@ -1884,7 +2166,10 @@
                       <div>
                         <h2>CloudFront</h2>
                       </div>
-                      <img src="cloudfront-icon.png" alt="CDN Service" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/amazon-cloudfront.png?v=1741809376397"
+                        alt="CDN Service"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1906,6 +2191,11 @@
                         <p>Content Delivery Network</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/cloudfront/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- AWS Amplify -->
@@ -1914,7 +2204,10 @@
                       <div>
                         <h2>AWS Amplify</h2>
                       </div>
-                      <img src="amplify-icon.png" alt="Frontend Development" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/2c7d91e0-04bd-4d8e-b4fd-856168ab49c0.image.png?v=1741809492136"
+                        alt="Frontend Development"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1936,6 +2229,11 @@
                         <p>Desarrollo Fullstack</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/amplify/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Device Farm -->
@@ -1944,7 +2242,10 @@
                       <div>
                         <h2>Device Farm</h2>
                       </div>
-                      <img src="devicefarm-icon.png" alt="Testing Service" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/aws-device-farm.png?v=1741809548383"
+                        alt="Testing Service"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -1966,6 +2267,11 @@
                         <p>Testing en Dispositivos</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/device-farm/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
                 </div>
               </div>
@@ -2000,7 +2306,10 @@
                       <div>
                         <h2>Amazon IVS</h2>
                       </div>
-                      <img src="ivs-icon.png" alt="Video Streaming" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/592946c4-ef8e-4a6b-9b03-36e86281cea4.image.png?v=1741824420984"
+                        alt="Video Streaming"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -2022,6 +2331,9 @@
                         <p>Streaming Interactivo</p>
                       </section>
                     </div>
+                    <a href="https://aws.amazon.com/ivs/" class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Elastic Transcoder -->
@@ -2030,7 +2342,10 @@
                       <div>
                         <h2>Elastic Transcoder</h2>
                       </div>
-                      <img src="transcoder-icon.png" alt="Media Conversion" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/b2218b02-34e9-4bff-a786-de6a820d4953.image.png?v=1741824455409"
+                        alt="Media Conversion"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -2052,6 +2367,11 @@
                         <p>Transcodificación</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/elastictranscoder/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- Nimble Studio -->
@@ -2060,7 +2380,10 @@
                       <div>
                         <h2>Nimble Studio</h2>
                       </div>
-                      <img src="nimble-icon.png" alt="Video Production" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/41af6298-5b65-4a42-8936-f79776e5586a.image.png?v=1741824496166"
+                        alt="Video Production"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -2082,6 +2405,11 @@
                         <p>Producción Visual</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/nimble-studio/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- MediaLive -->
@@ -2090,7 +2418,10 @@
                       <div>
                         <h2>MediaLive</h2>
                       </div>
-                      <img src="medialive-icon.png" alt="Live Processing" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/58c49768-3bc6-4d11-9e62-3abe10d28789.image.png?v=1741824542260"
+                        alt="Live Processing"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -2112,6 +2443,11 @@
                         <p>Broadcast en Vivo</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/medialive/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
 
                   <!-- MediaConnect -->
@@ -2120,7 +2456,10 @@
                       <div>
                         <h2>MediaConnect</h2>
                       </div>
-                      <img src="mediaconnect-icon.png" alt="Video Transport" />
+                      <img
+                        src="https://cdn.glitch.global/c7d80042-cbe1-4e27-bf54-d1705a5b5ece/2d134582-99f4-4f8b-8f92-6e140d389074.image.png?v=1741824566712"
+                        alt="Video Transport"
+                      />
                     </div>
                     <div class="card-content">
                       <section class="info-section blue-500">
@@ -2142,6 +2481,11 @@
                         <p>Transporte de Video</p>
                       </section>
                     </div>
+                    <a
+                      href="https://aws.amazon.com/mediaconnect/"
+                      class="btn-saber-mas"
+                      >Saber más</a
+                    >
                   </article>
                 </div>
               </div>
