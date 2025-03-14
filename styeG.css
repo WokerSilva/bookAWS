@@ -1,0 +1,64 @@
+header {
+    width: 100%;
+    display: block;
+  }
+  
+  .cardGlosario {
+    width: calc(1000% - 40px); /* Ajusta el ancho con porcentaje y margen */
+    max-width: 100%;
+    background-color: #232f3e;
+    color: white;
+    border: 2px solid #ff9900;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  .card-bodyG {
+    padding: 20px;
+  }
+  
+  .card-titleG {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .card-textG {
+    margin-bottom: 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mb-3 {
+    margin-bottom: 1rem;
+  }
+  
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .card-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .cardGlosario {
+      width: calc(100% - 40px); /* Ajusta el ancho para 2 columnas */
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .card-section {
+      grid-template-columns: 1fr;
+    }
+    .cardGlosario {
+      width: calc(100% - 40px); /* Ajusta el ancho para 1 columna */
+    }
+  }

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AWS Cloud Services</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;800&display=swap"
+    />
+    <link rel="stylesheet" href="/styleG.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <script src="/creacion.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">AWS<span> Services</span></a>
+      <button class="nav-toggle">☰</button>
+      <ul class="main-menu">
+        <li>
+          <a href="https://aws.amazon.com/es/getting-started/cloud-essentials/"
+            >Fundamentos</a
+          >
+        </li>
+        <li><a href="https://docs.aws.amazon.com/">Documentación</a></li>
+        <li><a href="/index.html">Servicios</a></li>
+      </ul>
+    </header>
+
+    <section class="card-section">
+      <!-- Concepto 51: OnPremise -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">OnPremise</h5>
+          <p class="card-textG">
+            Infraestructura de TI que se encuentra físicamente en las
+            instalaciones de una organización, en lugar de estar alojada en la
+            nube. Requiere mantenimiento y gestión interna.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 52: Cloud Computing -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Cloud Computing</h5>
+          <p class="card-textG">
+            Modelo de computación que permite el acceso bajo demanda a recursos
+            informáticos (como servidores, almacenamiento y aplicaciones) a
+            través de Internet, sin necesidad de gestionar infraestructura
+            física.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 53: Data Lake -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Data Lake</h5>
+          <p class="card-textG">
+            Repositorio centralizado que almacena grandes volúmenes de datos en
+            su formato original (estructurados, semiestructurados y no
+            estructurados), facilitando el análisis y la exploración.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 54: Base de Datos -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Base de Datos</h5>
+          <p class="card-textG">
+            Sistema organizado para almacenar, gestionar y recuperar datos.
+            Puede ser relacional (SQL) o no relacional (NoSQL), dependiendo de
+            la estructura y el uso.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 55: Gobernanza de Datos -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Gobernanza de Datos</h5>
+          <p class="card-textG">
+            Conjunto de políticas, procesos y estándares para garantizar la
+            calidad, seguridad y uso adecuado de los datos en una organización.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 56: SQL (Structured Query Language) -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">SQL (Structured Query Language)</h5>
+          <p class="card-textG">
+            Lenguaje de programación utilizado para gestionar y manipular bases
+            de datos relacionales. Permite consultar, insertar, actualizar y
+            eliminar datos.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 57: Migración a la Nube -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Migración a la Nube</h5>
+          <p class="card-textG">
+            Proceso de trasladar aplicaciones, datos y servicios desde una
+            infraestructura OnPremise a un entorno de nube, como AWS, Azure o
+            Google Cloud.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 58: Escalabilidad en la Nube -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Escalabilidad en la Nube</h5>
+          <p class="card-textG">
+            Capacidad de un sistema en la nube para ajustar automáticamente sus
+            recursos (como servidores o almacenamiento) en función de la
+            demanda, sin interrupciones.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 59: Data Warehouse -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Data Warehouse</h5>
+          <p class="card-textG">
+            Almacén de datos optimizado para el análisis y la consulta de
+            grandes volúmenes de información, generalmente utilizado en Business
+            Intelligence.
+          </p>
+        </div>
+      </div>
+      <!-- Concepto 1: DNS -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">DNS (Sistema de Nombres de Dominio)</h5>
+          <p class="card-textG">
+            Un sistema que traduce nombres de dominio legibles por humanos (como
+            `www.ejemplo.com`) en direcciones IP numéricas, permitiendo que los
+            dispositivos se comuniquen entre sí en Internet.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 2: Red Virtual -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Red Virtual</h5>
+          <p class="card-textG">
+            Un entorno de red aislado lógicamente dentro de la nube, donde
+            puedes lanzar recursos de AWS como instancias EC2. Permite control
+            total sobre la configuración de red, como subredes y grupos de
+            seguridad.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 3: Archivo en Frío -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Archivo en Frío</h5>
+          <p class="card-textG">
+            Almacenamiento de datos optimizado para retención a largo plazo, con
+            costos reducidos. Ideal para datos a los que se accede con poca
+            frecuencia, como copias de seguridad o registros históricos.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 4: Backups -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Backups</h5>
+          <p class="card-textG">
+            Copias de seguridad de datos o sistemas que permiten la recuperación
+            en caso de pérdida, corrupción o desastres. AWS ofrece servicios
+            automatizados para gestionar y restaurar backups.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 5: Balanceo de Carga -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Balanceo de Carga</h5>
+          <p class="card-textG">
+            Distribución del tráfico de red entre múltiples servidores o
+            instancias para mejorar la disponibilidad y escalabilidad de las
+            aplicaciones.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 6: Escalado Automático -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Escalado Automático</h5>
+          <p class="card-textG">
+            Capacidad de ajustar automáticamente la cantidad de recursos
+            informáticos (como instancias EC2) en función de la demanda,
+            optimizando costos y rendimiento.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 7: Serverless (Sin Servidor) -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Serverless (Sin Servidor)</h5>
+          <p class="card-textG">
+            Un modelo de computación en el que el proveedor de la nube (AWS)
+            gestiona automáticamente la infraestructura, permitiendo a los
+            desarrolladores centrarse en el código sin preocuparse por
+            servidores.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 8: Edge Computing -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Edge Computing</h5>
+          <p class="card-textG">
+            Procesamiento de datos cerca de la fuente de generación
+            (dispositivos IoT o usuarios finales) para reducir la latencia y
+            mejorar la eficiencia.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 9: Caché en Memoria -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Caché en Memoria</h5>
+          <p class="card-textG">
+            Almacenamiento temporal de datos en memoria RAM para acceder
+            rápidamente a información frecuentemente solicitada, mejorando el
+            rendimiento de las aplicaciones.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 10: Base de Datos Relacional -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Base de Datos Relacional</h5>
+          <p class="card-textG">
+            Un tipo de base de datos que organiza los datos en tablas
+            relacionadas entre sí, utilizando SQL para consultas y operaciones.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 11: Base de Datos NoSQL -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Base de Datos NoSQL</h5>
+          <p class="card-textG">
+            Base de datos diseñada para manejar grandes volúmenes de datos no
+            estructurados o semiestructurados, sin necesidad de un esquema fijo.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 12: Data Warehouse -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Data Warehouse</h5>
+          <p class="card-textG">
+            Almacén de datos optimizado para el análisis y la consulta de
+            grandes volúmenes de información, generalmente utilizado en Business
+            Intelligence.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 13: Series Temporales -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Series Temporales</h5>
+          <p class="card-textG">
+            Datos que se registran en intervalos de tiempo específicos,
+            utilizados para análisis de tendencias, pronósticos y monitoreo.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 14: Inferencia de ML -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Inferencia de ML</h5>
+          <p class="card-textG">
+            Proceso de utilizar un modelo de machine learning entrenado para
+            hacer predicciones o tomar decisiones basadas en nuevos datos.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 15: Computer Vision -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Computer Vision</h5>
+          <p class="card-textG">
+            Campo de la inteligencia artificial que permite a las máquinas
+            interpretar y analizar imágenes y videos, como el reconocimiento
+            facial o la detección de objetos.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 16: NLP (Procesamiento de Lenguaje Natural) -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">NLP (Procesamiento de Lenguaje Natural)</h5>
+          <p class="card-textG">
+            Tecnología que permite a las máquinas entender, interpretar y
+            generar lenguaje humano, utilizada en chatbots, análisis de
+            sentimientos y traducción automática.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 17: IoT (Internet de las Cosas) -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">IoT (Internet de las Cosas)</h5>
+          <p class="card-textG">
+            Red de dispositivos físicos conectados a Internet que recopilan y
+            comparten datos, como sensores, wearables y electrodomésticos
+            inteligentes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 18: Blockchain -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Blockchain</h5>
+          <p class="card-textG">
+            Tecnología de registro distribuido que permite la creación de
+            registros inmutables y transparentes, utilizada en aplicaciones como
+            contratos inteligentes y tokenización.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 19: Contratos Inteligentes -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Contratos Inteligentes</h5>
+          <p class="card-textG">
+            Programas autoejecutables que se ejecutan en una blockchain y
+            facilitan acuerdos automatizados entre partes sin intermediarios.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 20: Trazabilidad -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Trazabilidad</h5>
+          <p class="card-textG">
+            Capacidad de rastrear el origen y el historial de un producto o dato
+            a lo largo de su ciclo de vida, común en cadenas de suministro y
+            auditorías.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 21: Geofencing -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Geofencing</h5>
+          <p class="card-textG">
+            Técnica que utiliza GPS o RFID para crear límites virtuales
+            alrededor de áreas geográficas, permitiendo acciones automatizadas
+            cuando un dispositivo entra o sale de la zona.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 22: Streaming de Datos -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Streaming de Datos</h5>
+          <p class="card-textG">
+            Transmisión continua de datos en tiempo real, utilizada en
+            aplicaciones como análisis de métricas, monitoreo de sistemas y
+            procesamiento de eventos.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 23: API (Interfaz de Programación de Aplicaciones) -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">
+            API (Interfaz de Programación de Aplicaciones)
+          </h5>
+          <p class="card-textG">
+            Conjunto de reglas y protocolos que permiten que diferentes
+            aplicaciones se comuniquen entre sí, facilitando la integración de
+            servicios.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 24: CDN (Red de Entrega de Contenido) -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">CDN (Red de Entrega de Contenido)</h5>
+          <p class="card-textG">
+            Red distribuida de servidores que entrega contenido web (como
+            imágenes, videos y scripts) de manera rápida y eficiente a usuarios
+            finales.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 25: VPN (Red Privada Virtual) -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">VPN (Red Privada Virtual)</h5>
+          <p class="card-textG">
+            Conexión segura y cifrada entre redes locales y la nube, permitiendo
+            acceso remoto seguro a recursos privados.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 26: Enrutamiento -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Enrutamiento</h5>
+          <p class="card-textG">
+            Proceso de dirigir el tráfico de red entre diferentes dispositivos o
+            redes, optimizando la entrega de datos.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 27: Subred -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Subred</h5>
+          <p class="card-textG">
+            Segmento de una red IP que permite organizar y aislar recursos,
+            mejorando la seguridad y el rendimiento.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 28: Grupo de Seguridad -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Grupo de Seguridad</h5>
+          <p class="card-textG">
+            Conjunto de reglas de firewall que controlan el tráfico entrante y
+            saliente de instancias o recursos en la nube.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 29: Cifrado -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Cifrado</h5>
+          <p class="card-textG">
+            Proceso de convertir datos en un formato ilegible para protegerlos
+            de accesos no autorizados, utilizando algoritmos criptográficos.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 30: Autenticación -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Autenticación</h5>
+          <p class="card-textG">
+            Proceso de verificar la identidad de un usuario o dispositivo antes
+            de permitir el acceso a un sistema o recurso.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 31: Autorización -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Autorización</h5>
+          <p class="card-textG">
+            Proceso de determinar qué acciones o recursos puede acceder un
+            usuario o aplicación después de la autenticación.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 32: Escaneo de Vulnerabilidades -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Escaneo de Vulnerabilidades</h5>
+          <p class="card-textG">
+            Evaluación automatizada de sistemas y aplicaciones para identificar
+            y corregir posibles brechas de seguridad.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 33: Auditoría -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Auditoría</h5>
+          <p class="card-textG">
+            Revisión sistemática de sistemas, procesos o datos para garantizar
+            el cumplimiento de normativas y estándares de seguridad.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 34: Cumplimiento Normativo -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Cumplimiento Normativo</h5>
+          <p class="card-textG">
+            Alineación de sistemas y procesos con regulaciones y estándares
+            legales o industriales, como GDPR, HIPAA o PCI-DSS.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 35: Data Lake -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Data Lake</h5>
+          <p class="card-textG">
+            Repositorio centralizado que almacena grandes volúmenes de datos en
+            su formato original, facilitando el análisis y la exploración.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 36: ETL (Extracción, Transformación y Carga) -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">ETL (Extracción, Transformación y Carga)</h5>
+          <p class="card-textG">
+            Proceso de extraer datos de múltiples fuentes, transformarlos en un
+            formato útil y cargarlos en un sistema de destino, como un data
+            warehouse.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 37: Pipeline de Datos -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Pipeline de Datos</h5>
+          <p class="card-textG">
+            Conjunto de procesos y herramientas que permiten el flujo de datos
+            desde su origen hasta su destino, incluyendo transformaciones y
+            validaciones.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 38: Análisis de Sentimientos -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Análisis de Sentimientos</h5>
+          <p class="card-textG">
+            Técnica de NLP que determina la actitud o emoción expresada en un
+            texto, utilizada en redes sociales, reseñas y encuestas.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 39: Pronóstico Predictivo -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Pronóstico Predictivo</h5>
+          <p class="card-textG">
+            Uso de modelos de machine learning para predecir eventos futuros
+            basados en datos históricos, como la demanda de productos o el
+            clima.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 40: Tokenización -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Tokenización</h5>
+          <p class="card-textG">
+            Proceso de convertir activos físicos o digitales en tokens digitales
+            que pueden ser gestionados y transferidos en una blockchain.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 41: Microservicios -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Microservicios</h5>
+          <p class="card-textG">
+            Arquitectura de software que divide una aplicación en servicios
+            pequeños e independientes, cada uno con una función específica.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 42: Contenedores -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Contenedores</h5>
+          <p class="card-textG">
+            Tecnología que permite empaquetar una aplicación y sus dependencias
+            en una unidad aislada, facilitando su despliegue y escalabilidad.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 43: Orquestación de Contenedores -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Orquestación de Contenedores</h5>
+          <p class="card-textG">
+            Gestión automatizada de contenedores, incluyendo su despliegue,
+            escalado y monitoreo, utilizando herramientas como Kubernetes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 44: CI/CD (Integración Continua/Despliegue Continuo) -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">
+            CI/CD (Integración Continua/Despliegue Continuo)
+          </h5>
+          <p class="card-textG">
+            Prácticas de desarrollo que permiten la integración y entrega
+            continua de código, automatizando pruebas y despliegues.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 45: Monitoreo -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Monitoreo</h5>
+          <p class="card-textG">
+            Proceso de supervisar el rendimiento y la salud de sistemas y
+            aplicaciones en tiempo real, utilizando métricas y alertas.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 46: Logs -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Logs</h5>
+          <p class="card-textG">
+            Registros de eventos generados por sistemas y aplicaciones,
+            utilizados para diagnóstico, auditoría y análisis.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 47: Escalado Horizontal -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Escalado Horizontal</h5>
+          <p class="card-textG">
+            Aumento de la capacidad de un sistema añadiendo más instancias o
+            nodos, en lugar de aumentar el poder de una sola instancia.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 48: Escalado Vertical -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Escalado Vertical</h5>
+          <p class="card-textG">
+            Aumento de la capacidad de un sistema mejorando los recursos de una
+            instancia existente, como CPU o memoria.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 49: Alta Disponibilidad -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Alta Disponibilidad</h5>
+          <p class="card-textG">
+            Diseño de sistemas que garantiza un tiempo de actividad continuo,
+            incluso en caso de fallos, mediante redundancia y replicación.
+          </p>
+        </div>
+      </div>
+
+      <!-- Concepto 50: Recuperación ante Desastres -->
+      <div class="cardGlosario text-center mb-3">
+        <div class="card-bodyG">
+          <h5 class="card-titleG">Recuperación ante Desastres</h5>
+          <p class="card-textG">
+            Conjunto de políticas y herramientas para restaurar sistemas y datos
+            después de un fallo o desastre, minimizando el tiempo de
+            inactividad.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
